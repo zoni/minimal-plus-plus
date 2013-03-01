@@ -1,14 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400italic,700italic,400,700);
 
 body {
   padding:50px;
-  font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#666;
+  font: 14px/1.5 $font; 
+  color:$text_color;
+  background: $background_color;
   font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
   margin:0 0 20px;
 }
 
@@ -22,35 +21,50 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
+  color:$heading1_color;
 }
 
 h2 {
-  color:#393939;
+  color:$heading2_color;
 }
 
-h3, h4, h5, h6 {
-  color:#494949;
+h3 {
+  color:$heading3_color;
+
+}
+
+h4 {
+  color:$heading4_color;
+	
+}
+
+h5{
+  color:$heading5_color;
+}
+
+h6 {
+  color:$heading6_color;
 }
 
 a {
-  color:#39c;
+  color:$a_color;
   font-weight:400;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:$a_hover_color;
 }
 
 a small {
   font-size:11px;
-  color:#777;
+  color:$a_small_color;
   margin-top:-0.6em;
   display:block;
 }
 
 a:hover small {
-  color:#777;
+  color:$a_small_hover_color;
 }
 
 .wrapper {
@@ -59,23 +73,28 @@ a:hover small {
 }
 
 blockquote {
-  border-left:1px solid #e5e5e5;
+  border-left:1px solid $border_color;
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
+  font-family:$monospace_font;
   font-size:12px;
+}
+
+code {
+  color: $code_color;
+  background: $code_background;
 }
 
 pre {
   padding:8px 15px;
-  background: #f8f8f8;  
+  background: $pre_background;  
+  color: $pre_color;
   border-radius:5px;
-  border:1px solid #e5e5e5;
+  border:1px solid $border_color;
   overflow-x: auto;
 }
 
@@ -87,16 +106,16 @@ table {
 th, td {
   text-align:left;
   padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
+  border-bottom:1px solid $border_color;
 }
 
 dt {
-  color:#444;
+  color:$mischeading_color;
   font-weight:700;
 }
 
 th {
-  color:#444;
+  color:$mischeading_color;
 }
 
 img {
@@ -116,12 +135,7 @@ header ul {
   padding:0;
   
   background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  @include background-image(linear-gradient(top, #f8f8f8 0%, #dddddd 100%));
   
   border-radius:5px;
   border:1px solid #d2d2d2;
@@ -156,12 +170,7 @@ header ul a {
 
 header ul a:hover {
   color:#999;
-  background: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#ddd));
-  background: -webkit-linear-gradient(top, #fff 0%,#ddd 100%);
-  background: -o-linear-gradient(top, #fff 0%,#ddd 100%);
-  background: -ms-linear-gradient(top, #fff 0%,#ddd 100%);
-  background: linear-gradient(top, #fff 0%,#ddd 100%);
+  @include background-image(linear-gradient(top, #fff 0%, #ddd 100%));
 }
 
 header ul a:active {
@@ -171,7 +180,7 @@ header ul a:active {
 }
 
 strong {
-  color:#222;
+  color:$strong_color;
   font-weight:700;
 }
 
@@ -188,7 +197,7 @@ header ul li + li + li {
 header ul a strong {
   font-size:14px;
   display:block;
-  color:#222;
+  color:$strong_color;
 }
 
 section {
@@ -203,7 +212,7 @@ small {
 
 hr {
   border:0;
-  background:#e5e5e5;
+  background:$hr_color;
   height:1px;
   margin:0 0 20px;
 }
@@ -233,7 +242,7 @@ footer {
   }
   
   section {
-    border:1px solid #e5e5e5;
+    border:1px solid $section_border_color;
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
