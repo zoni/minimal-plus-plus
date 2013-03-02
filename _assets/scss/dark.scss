@@ -1,0 +1,46 @@
+//
+// dark.scss - A dark version of the minimal theme
+//
+
+@import "compass";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400italic,700italic,400,700);
+$font: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$monospace_font: DejaVu Sans Mono, Bitstream Vera Sans Mono, Lucida Console, Terminal, Monaco;
+$background_color: #242424;
+$text_color: #9da1a3;
+
+$heading1_color: lighten($text_color, 15%);
+$heading2_color: lighten($text_color, 10%);
+$heading3_color: lighten($text_color, 5%);
+
+$a_color: #d52d34;
+$a_hover_color: #e6433a;
+
+$strong_color: lighten($text_color, 20%);
+
+$border_color: darken($background_color, 5%);
+$hr_color: $border_color;
+$section_border_color: $border_color;
+
+$code_color: $text_color;
+$code_background: darken($background_color, 1%);
+$pre_color: $code_color;
+$pre_background: $code_background;
+
+// Some defaults
+
+$heading1_color: $text_color !default;
+$heading2_color: $heading1_color !default;
+$heading3_color: $heading2_color !default;
+$heading4_color: $heading3_color !default;
+$heading5_color: $heading4_color !default;
+$heading6_color: $heading5_color !default;
+$mischeading_color: $heading1_color !default;
+
+$a_small_color: $a_color !default;
+$a_small_hover_color: $a_hover_color !default;
+
+// The actual, non-theme specific, css
+
+@import "styles.scss";
