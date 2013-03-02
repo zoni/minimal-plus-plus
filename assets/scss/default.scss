@@ -1,5 +1,5 @@
 //
-// dark.scss - A dark version of the minimal theme
+// default.scss - The original minimal theme
 //
 
 @import "compass";
@@ -7,24 +7,27 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400italic,700italic,400,700);
 $font: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $monospace_font: DejaVu Sans Mono, Bitstream Vera Sans Mono, Lucida Console, Terminal, Monaco;
-$background_color: #242424;
-$text_color: #9da1a3;
+$background_color: #fff;
+$text_color: #666;
 
-$heading1_color: lighten($text_color, 15%);
-$heading2_color: lighten($text_color, 10%);
-$heading3_color: lighten($text_color, 5%);
+$heading1_color: #222;
+$heading2_color: #393939;
+$heading3_color: #494949;
+$mischeading_color: #444;
 
-$a_color: #d52d34;
-$a_hover_color: #e6433a;
+$a_color: #39c;
+$a_hover_color: #069;
+$a_small_color: #777;
+$a_small_hover_color: $a_small_color;
 
-$strong_color: lighten($text_color, 20%);
+$strong_color: #222;
 
-$border_color: darken($background_color, 5%);
+$border_color: #e5e5e5;
 $hr_color: $border_color;
 $section_border_color: $border_color;
 
-$code_color: $text_color;
-$code_background: darken($background_color, 1%);
+$code_color: #333;
+$code_background: #f8f8f8;
 $pre_color: $code_color;
 $pre_background: $code_background;
 
@@ -43,4 +46,4 @@ $a_small_hover_color: $a_hover_color !default;
 
 // The actual, non-theme specific, css
 
-@import "styles.scss";
+@import "layout";

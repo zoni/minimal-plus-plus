@@ -1,14 +1,14 @@
-# Minimal Theme
+Minimal++ theme by Nick Groenen
+===============================
 
-[Demo the Theme](http://orderedlist.github.com/minimal/)
+A responsive theme for websites, originally by [orderedlist](https://github.com/orderedlist). [Demo the theme](http://zoni.github.com/minimal-plus-plus/) right here on GitHub pages.
 
-This is the raw HTML and styles that are used for the *minimal* theme on [GitHub Pages](http://pages.github.com/).
+Changes from minimal
+--------------------
 
-Syntax highlighting is provided on GitHub Pages by [Pygments](http://pygments.org).
+Minimal++ uses [scss](http://sass-lang.com/) to make it a little easier to apply your own brand of awesomesauce to the theme, fixes a few quirks with minimal that were bugging the author, and includes an alternative dark theme in addition to the original dark on light theme.
 
-# License
+License
+-------
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
-
-
-
+This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/). It is a derivative of the original [minimal theme](https://github.com/orderedlist/minimal) by Steve Smith.
