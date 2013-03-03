@@ -168,7 +168,7 @@ div.wrapper > footer {
     margin:0;
   }
 
-  div.wrapper > header, section, footer {
+  div.wrapper > header, div.wrapper > section, div.wrapper > footer {
     float:none;
     position:static;
     width:auto;
