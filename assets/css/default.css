@@ -44,29 +44,29 @@ h4 {
   color: #494949;
 }
 
-/* line 41, ../scss/_layout.scss */
+/* line 40, ../scss/_layout.scss */
 h5 {
   color: #494949;
 }
 
-/* line 45, ../scss/_layout.scss */
+/* line 44, ../scss/_layout.scss */
 h6 {
   color: #494949;
 }
 
-/* line 49, ../scss/_layout.scss */
+/* line 48, ../scss/_layout.scss */
 a {
   color: #3399cc;
   font-weight: 400;
   text-decoration: none;
 }
 
-/* line 55, ../scss/_layout.scss */
+/* line 54, ../scss/_layout.scss */
 a:hover {
   color: #006699;
 }
 
-/* line 59, ../scss/_layout.scss */
+/* line 58, ../scss/_layout.scss */
 a small {
   font-size: 11px;
   color: #777777;
@@ -74,18 +74,18 @@ a small {
   display: block;
 }
 
-/* line 66, ../scss/_layout.scss */
+/* line 65, ../scss/_layout.scss */
 a:hover small {
   color: #777777;
 }
 
-/* line 70, ../scss/_layout.scss */
+/* line 69, ../scss/_layout.scss */
 .wrapper {
   width: 860px;
   margin: 0 auto;
 }
 
-/* line 75, ../scss/_layout.scss */
+/* line 74, ../scss/_layout.scss */
 blockquote {
   border-left: 1px solid #e5e5e5;
   margin: 0;
@@ -93,19 +93,19 @@ blockquote {
   font-style: italic;
 }
 
-/* line 82, ../scss/_layout.scss */
+/* line 81, ../scss/_layout.scss */
 code, pre {
   font-family: DejaVu Sans Mono, Bitstream Vera Sans Mono, Lucida Console, Terminal, Monaco;
   font-size: 12px;
 }
 
-/* line 87, ../scss/_layout.scss */
+/* line 86, ../scss/_layout.scss */
 code {
   color: #333333;
   background: #f8f8f8;
 }
 
-/* line 92, ../scss/_layout.scss */
+/* line 91, ../scss/_layout.scss */
 pre {
   padding: 8px 15px;
   background: #f8f8f8;
@@ -115,67 +115,67 @@ pre {
   overflow-x: auto;
 }
 
-/* line 101, ../scss/_layout.scss */
+/* line 100, ../scss/_layout.scss */
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-/* line 106, ../scss/_layout.scss */
+/* line 105, ../scss/_layout.scss */
 th, td {
   text-align: left;
   padding: 5px 10px;
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 112, ../scss/_layout.scss */
+/* line 111, ../scss/_layout.scss */
 dt {
   color: #444444;
   font-weight: 700;
 }
 
-/* line 117, ../scss/_layout.scss */
+/* line 116, ../scss/_layout.scss */
 th {
   color: #444444;
 }
 
-/* line 121, ../scss/_layout.scss */
+/* line 120, ../scss/_layout.scss */
 img {
   max-width: 100%;
 }
 
-/* line 125, ../scss/_layout.scss */
-header {
+/* line 124, ../scss/_layout.scss */
+div.wrapper > header {
   width: 270px;
   float: left;
   position: fixed;
 }
 
-/* line 131, ../scss/_layout.scss */
-header ul {
+/* line 130, ../scss/_layout.scss */
+div.wrapper > header ul {
   list-style: none;
   padding: 0;
 }
 
-/* line 136, ../scss/_layout.scss */
+/* line 135, ../scss/_layout.scss */
 strong {
   color: #222222;
   font-weight: 700;
 }
 
-/* line 141, ../scss/_layout.scss */
-section {
+/* line 140, ../scss/_layout.scss */
+div.wrapper > section {
   width: 500px;
   float: right;
   padding-bottom: 50px;
 }
 
-/* line 147, ../scss/_layout.scss */
+/* line 146, ../scss/_layout.scss */
 small {
   font-size: 11px;
 }
 
-/* line 151, ../scss/_layout.scss */
+/* line 150, ../scss/_layout.scss */
 hr {
   border: 0;
   background: #e5e5e5;
@@ -183,8 +183,8 @@ hr {
   margin: 0 0 20px;
 }
 
-/* line 158, ../scss/_layout.scss */
-footer {
+/* line 157, ../scss/_layout.scss */
+div.wrapper > footer {
   width: 270px;
   float: left;
   position: fixed;
@@ -192,26 +192,26 @@ footer {
 }
 
 @media print, screen and (max-width: 960px) {
-  /* line 167, ../scss/_layout.scss */
+  /* line 166, ../scss/_layout.scss */
   div.wrapper {
     width: auto;
     margin: 0;
   }
 
-  /* line 172, ../scss/_layout.scss */
-  header, section, footer {
+  /* line 171, ../scss/_layout.scss */
+  div.wrapper > header, section, footer {
     float: none;
     position: static;
     width: auto;
   }
 
-  /* line 178, ../scss/_layout.scss */
-  header {
+  /* line 177, ../scss/_layout.scss */
+  div.wrapper > header {
     padding-right: 320px;
   }
 
-  /* line 182, ../scss/_layout.scss */
-  section {
+  /* line 181, ../scss/_layout.scss */
+  div.wrapper > section {
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
     padding: 20px 0;
@@ -219,34 +219,34 @@ footer {
   }
 }
 @media print, screen and (max-width: 720px) {
-  /* line 191, ../scss/_layout.scss */
+  /* line 190, ../scss/_layout.scss */
   body {
     word-wrap: break-word;
   }
 
-  /* line 195, ../scss/_layout.scss */
-  header {
+  /* line 194, ../scss/_layout.scss */
+  div.wrapper > header {
     padding: 0;
   }
 
-  /* line 199, ../scss/_layout.scss */
-  header ul, header p.view {
+  /* line 198, ../scss/_layout.scss */
+  div.wrapper > header ul, div.wrapper > header p.view {
     position: static;
   }
 
-  /* line 203, ../scss/_layout.scss */
+  /* line 202, ../scss/_layout.scss */
   pre, code {
     word-wrap: normal;
   }
 }
 @media print, screen and (max-width: 480px) {
-  /* line 209, ../scss/_layout.scss */
+  /* line 208, ../scss/_layout.scss */
   body {
     padding: 15px;
   }
 }
 @media print {
-  /* line 215, ../scss/_layout.scss */
+  /* line 214, ../scss/_layout.scss */
   body {
     padding: 0.4in;
     font-size: 12pt;
