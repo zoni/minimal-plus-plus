@@ -79,13 +79,18 @@ a:hover small {
   color: #777777;
 }
 
-/* line 69, ../scss/_layout.scss */
+/* line 70, ../scss/_layout.scss */
+a img {
+  border: none;
+}
+
+/* line 74, ../scss/_layout.scss */
 .wrapper {
   width: 860px;
   margin: 0 auto;
 }
 
-/* line 74, ../scss/_layout.scss */
+/* line 79, ../scss/_layout.scss */
 blockquote {
   border-left: 1px solid #e5e5e5;
   margin: 0;
@@ -93,19 +98,19 @@ blockquote {
   font-style: italic;
 }
 
-/* line 81, ../scss/_layout.scss */
+/* line 86, ../scss/_layout.scss */
 code, pre {
   font-family: DejaVu Sans Mono, Bitstream Vera Sans Mono, Lucida Console, Terminal, Monaco;
   font-size: 12px;
 }
 
-/* line 86, ../scss/_layout.scss */
+/* line 91, ../scss/_layout.scss */
 code {
   color: #333333;
   background: #f8f8f8;
 }
 
-/* line 91, ../scss/_layout.scss */
+/* line 96, ../scss/_layout.scss */
 pre {
   padding: 8px 15px;
   background: #f8f8f8;
@@ -115,67 +120,67 @@ pre {
   overflow-x: auto;
 }
 
-/* line 100, ../scss/_layout.scss */
+/* line 105, ../scss/_layout.scss */
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-/* line 105, ../scss/_layout.scss */
+/* line 110, ../scss/_layout.scss */
 th, td {
   text-align: left;
   padding: 5px 10px;
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 111, ../scss/_layout.scss */
+/* line 116, ../scss/_layout.scss */
 dt {
   color: #444444;
   font-weight: 700;
 }
 
-/* line 116, ../scss/_layout.scss */
+/* line 121, ../scss/_layout.scss */
 th {
   color: #444444;
 }
 
-/* line 120, ../scss/_layout.scss */
+/* line 125, ../scss/_layout.scss */
 img {
   max-width: 100%;
 }
 
-/* line 124, ../scss/_layout.scss */
+/* line 129, ../scss/_layout.scss */
 div.wrapper > header {
   width: 270px;
   float: left;
   position: fixed;
 }
 
-/* line 130, ../scss/_layout.scss */
+/* line 135, ../scss/_layout.scss */
 div.wrapper > header ul {
   list-style: none;
   padding: 0;
 }
 
-/* line 135, ../scss/_layout.scss */
+/* line 140, ../scss/_layout.scss */
 strong {
   color: #222222;
   font-weight: 700;
 }
 
-/* line 140, ../scss/_layout.scss */
+/* line 145, ../scss/_layout.scss */
 div.wrapper > section {
   width: 500px;
   float: right;
   padding-bottom: 50px;
 }
 
-/* line 146, ../scss/_layout.scss */
+/* line 151, ../scss/_layout.scss */
 small {
   font-size: 11px;
 }
 
-/* line 150, ../scss/_layout.scss */
+/* line 155, ../scss/_layout.scss */
 hr {
   border: 0;
   background: #e5e5e5;
@@ -183,7 +188,7 @@ hr {
   margin: 0 0 20px;
 }
 
-/* line 157, ../scss/_layout.scss */
+/* line 162, ../scss/_layout.scss */
 div.wrapper > footer {
   width: 270px;
   float: left;
@@ -192,25 +197,25 @@ div.wrapper > footer {
 }
 
 @media print, screen and (max-width: 960px) {
-  /* line 166, ../scss/_layout.scss */
+  /* line 171, ../scss/_layout.scss */
   div.wrapper {
     width: auto;
     margin: 0;
   }
 
-  /* line 171, ../scss/_layout.scss */
+  /* line 176, ../scss/_layout.scss */
   div.wrapper > header, div.wrapper > section, div.wrapper > footer {
     float: none;
     position: static;
     width: auto;
   }
 
-  /* line 177, ../scss/_layout.scss */
+  /* line 182, ../scss/_layout.scss */
   div.wrapper > header {
     padding-right: 320px;
   }
 
-  /* line 181, ../scss/_layout.scss */
+  /* line 186, ../scss/_layout.scss */
   div.wrapper > section {
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
@@ -219,34 +224,34 @@ div.wrapper > footer {
   }
 }
 @media print, screen and (max-width: 720px) {
-  /* line 190, ../scss/_layout.scss */
+  /* line 195, ../scss/_layout.scss */
   body {
     word-wrap: break-word;
   }
 
-  /* line 194, ../scss/_layout.scss */
+  /* line 199, ../scss/_layout.scss */
   div.wrapper > header {
     padding: 0;
   }
 
-  /* line 198, ../scss/_layout.scss */
+  /* line 203, ../scss/_layout.scss */
   div.wrapper > header ul, div.wrapper > header p.view {
     position: static;
   }
 
-  /* line 202, ../scss/_layout.scss */
+  /* line 207, ../scss/_layout.scss */
   pre, code {
     word-wrap: normal;
   }
 }
 @media print, screen and (max-width: 480px) {
-  /* line 208, ../scss/_layout.scss */
+  /* line 213, ../scss/_layout.scss */
   body {
     padding: 15px;
   }
 }
 @media print {
-  /* line 214, ../scss/_layout.scss */
+  /* line 219, ../scss/_layout.scss */
   body {
     padding: 0.4in;
     font-size: 12pt;
