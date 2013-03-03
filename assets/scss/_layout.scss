@@ -66,6 +66,11 @@ a:hover small {
   color:$a_small_hover_color;
 }
 
+a img
+{
+  border: none;
+}
+
 .wrapper {
   width:860px;
   margin:0 auto;
