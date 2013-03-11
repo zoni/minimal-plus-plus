@@ -99,7 +99,7 @@ pre {
   color: $pre_color;
   border-radius:5px;
   border:1px solid $border_color;
-  overflow-x: auto;
+  white-space: pre-wrap;
 }
 
 table {
